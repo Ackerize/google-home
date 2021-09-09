@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+.nav-item {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.nav-item,
+.nav-item ~ li {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.nav-list, .app-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 15px;
+  flex-wrap: wrap;
+}
+
+.menu-icon {
+  width: 20px;
+}
+
+.avatar-icon {
+  width: 35px;
+}
+
+.nav-item ~ li img {
+  vertical-align: middle;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 35%;
+}
+
+.input-icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;    
+}
+
+.logo-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    width: 60%;
+    border: 1px solid #DFE1E5;
+    border-radius: 25px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.search-input:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+input {
+    border-style: none;
+    width: 85%;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.apps-container {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.app-icon {
+    width: 25px;
+    object-fit: cover;
+}
+
+.app-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #F1F3F4;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;	
+}
+
+ul.app-list li{
+    margin: 25px 20px;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1025px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 481px) {
+    .container {
+        width: 95%;
+    }
+
+    .apps-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        width: 80%;
+    }
+
+    .apps-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .search-input {
+        width: 80%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .apps-container {
+        width: 100%;
+    }
+
+    .logo-input-container {
+        margin-top: 4rem;
+    }
+}
